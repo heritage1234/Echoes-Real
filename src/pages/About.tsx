@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import AboutContent from "@/components/AboutContent";
 
-const Index = () => {
+const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <HeroSection />
@@ -10,4 +10,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default About;
