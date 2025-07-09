@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import ProjectGallery from "@/components/ProjectGallery";
 
 const Services = () => {
   const services = [
@@ -139,6 +140,9 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      {/* Project Gallery */}
+      <ProjectGallery />
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">

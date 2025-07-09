@@ -15,19 +15,19 @@ const Home = () => {
     {
       title: "Modern Residential Complex",
       category: "Residential",
-      image: "/api/placeholder/400/300",
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop",
       description: "Contemporary living spaces that blend comfort with style"
     },
     {
       title: "Corporate Headquarters",
       category: "Commercial", 
-      image: "/api/placeholder/400/300",
+      image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=600&h=400&fit=crop",
       description: "Innovative workspace design for modern businesses"
     },
     {
       title: "Cultural Center",
       category: "Public",
-      image: "/api/placeholder/400/300", 
+      image: "https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=600&h=400&fit=crop", 
       description: "Community spaces that inspire and connect"
     }
   ];
@@ -96,10 +96,12 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProjects.map((project, index) => (
               <Card key={index} className="group hover:shadow-elegant transition-all duration-300 cursor-pointer">
-                <div className="aspect-[4/3] bg-gradient-subtle rounded-t-lg overflow-hidden">
-                  <div className="w-full h-full bg-architectural-blue-light/20 flex items-center justify-center">
-                    <Building className="h-16 w-16 text-architectural-blue" />
-                  </div>
+                <div className="aspect-[4/3] rounded-t-lg overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <CardContent className="p-6">
                   <Badge variant="outline" className="mb-3">{project.category}</Badge>
