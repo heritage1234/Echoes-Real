@@ -1,13 +1,7 @@
-import HeroSection from "@/components/HeroSection";
-import AboutContent from "@/components/AboutContent";
+import Home from "./Home";
 
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background">
-      <HeroSection />
-      <AboutContent />
-    </div>
-  );
+  return <Home />;
 };
 
 export default Index;
