@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import myHouseImg from "../assets/myHouse.jpeg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg"></div>
+            <img src={myHouseImg} alt="logo" className="w-8 h-8 object-cover rounded-lg" />
             <span className="text-xl font-semibold text-foreground">
               Echoes of Grace
             </span>
@@ -46,9 +47,9 @@ const Header = () => {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex">
+          {/* <div className="hidden md:flex">
             <Button variant="architectural">Get Quote</Button>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
@@ -80,11 +81,11 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="px-3 py-2">
+              {/* <div className="px-3 py-2">
                 <Button variant="architectural" className="w-full">
                   Get Quote
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         )}

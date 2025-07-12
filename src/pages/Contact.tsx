@@ -7,8 +7,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 
+interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  projectType: string;
+  message: string;
+}
+
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
     phone: "",
@@ -21,15 +29,44 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message Sent Successfully!",
-      description: "We'll get back to you within 24 hours.",
+  try {
+    const response = await fetch("http://localhost:5000/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
     });
-    setFormData({ name: "", email: "", phone: "", projectType: "", message: "" });
-  };
+
+    if (response.ok) {
+      toast({
+        title: "Message Sent Successfully!",
+        description: "We'll get back to you within 24 hours.",
+      });
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        projectType: "",
+        message: "",
+      });
+    } else {
+      toast({
+        title: "Failed to send message",
+        description: "Server responded with an error.",
+      });
+      console.error("❌ Server response:", await response.text());
+    }
+  } catch (error) {
+    console.error("❌ Network error:", error);
+    toast({
+      title: "Network Error",
+      description: "Please try again later.",
+    });
+  }
+};
+
 
   const contactInfo = [
     {
@@ -41,8 +78,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone Number",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
-      link: "tel:+15551234567"
+      details: ["+234 (555) 123-4567", "+234 (555) 987-6543"],
+      link: "tel:+2345551234567"
     },
     {
       icon: Mail,
@@ -129,7 +166,7 @@ const Contact = () => {
                           name="phone"
                           value={formData.phone}
                           onChange={handleInputChange}
-                          placeholder="+1 (555) 123-4567"
+                          placeholder="+234 (555) 123-4567"
                         />
                       </div>
                       <div>

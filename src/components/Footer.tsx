@@ -77,18 +77,18 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-neutral-300">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+234 703 792 9738</span>
               </div>
               <div className="flex items-center space-x-2 text-neutral-300">
                 <Mail className="h-4 w-4" />
-                <span>info@echoesofgrace.com</span>
+                <span>alaoayomide700@gmail.com</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-neutral-600 mt-8 pt-8 text-center text-sm text-neutral-400">
-          <p>&copy; 2024 Echoes of Grace Architecture. All rights reserved.</p>
+          <p>&copy; 2025 Echoes of Grace Architecture. All rights reserved.</p>
         </div>
       </div>
     </footer>

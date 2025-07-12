@@ -36,9 +36,7 @@ const AboutContent = () => {
         {/* Main About Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <div className="animate-slide-in-up">
-            <Badge variant="outline" className="mb-4 text-primary border-primary">
-              Our Story
-            </Badge>
+            <Badge className="mb-4 text-primary border-primary">Our Story</Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Building a Strong Online Brand with 
               <span className="text-primary"> Architecture</span>
@@ -79,11 +77,11 @@ const AboutContent = () => {
         {/* Values Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4 text-primary border-primary">
+            <Badge className="mb-4 text-primary border-primary">
               Our Values
             </Badge>
-            <h2 className="text-4xl font-bold text-foreground mb-6">
-              What Drives Us Forward
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Our Values
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Our values are the foundation of every design decision, guiding us to create spaces that inspire and endure.
