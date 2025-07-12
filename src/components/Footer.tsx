@@ -17,13 +17,13 @@ const Footer = () => {
               bringing grace and innovation to every project.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-neutral-400 hover:text-primary transition-colors">
+              <a href="#" title="Facebook" className="text-neutral-400 hover:text-primary transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-neutral-400 hover:text-primary transition-colors">
+              <a href="#" title="Instagram" className="text-neutral-400 hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-neutral-400 hover:text-primary transition-colors">
+              <a href="#" title="LinkedIn" className="text-neutral-400 hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
