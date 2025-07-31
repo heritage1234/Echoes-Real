@@ -33,7 +33,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
   try {
-    const response = await fetch("http://localhost:5000/api/send-email", {
+    const response = await fetch("https://echoes-real.onrender.com/api/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
