@@ -15,19 +15,19 @@ const Home = () => {
     {
       title: "Modern Residential Complex",
       category: "Residential",
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop",
+      image: "https://buildingpractice.biz/wp-content/uploads/2024/01/2-29.jpg",
       description: "Contemporary living spaces that blend comfort with style"
     },
     {
       title: "Corporate Headquarters",
       category: "Commercial", 
-      image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=600&h=400&fit=crop",
+      image: "https://buildingpractice.biz/wp-content/uploads/2024/01/1-23.jpg",
       description: "Innovative workspace design for modern businesses"
     },
     {
       title: "Cultural Center",
       category: "Public",
-      image: "https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=600&h=400&fit=crop", 
+      image: "https://s3.amazonaws.com/europaconcorsi/project_images/387233/1774189824_large.jpg", 
       description: "Community spaces that inspire and connect"
     }
   ];

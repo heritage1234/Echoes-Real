@@ -6,37 +6,37 @@ const ProjectGallery = () => {
     {
       title: "Sky Tower Residences",
       category: "Residential",
-      image: "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?w=600&h=400&fit=crop",
+      image: "https://buildingpractice.biz/wp-content/uploads/2024/01/2-6.jpg",
       description: "Luxury high-rise living with panoramic city views"
     },
     {
       title: "Innovation Hub",
       category: "Commercial",
-      image: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?w=600&h=400&fit=crop",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3XBu6MJFtMiKEFeRId8TEaz0NJ4voWxmAA&s",
       description: "Cutting-edge workspace for tech companies"
     },
     {
       title: "Serenity Pavilion",
       category: "Cultural",
-      image: "https://images.unsplash.com/photo-1466442929976-97f336a657be?w=600&h=400&fit=crop",
+      image: "https://tourafricamag.com/wp-content/uploads/2025/07/lakowe-lakes-resort-accomodation-1024x683.png",
       description: "Peaceful retreat blending traditional and modern elements"
     },
     {
       title: "Glass House",
       category: "Residential",
-      image: "https://images.unsplash.com/photo-1497604401993-f2e922e5cb0a?w=600&h=400&fit=crop",
+      image: "https://i.pinimg.com/736x/59/7c/77/597c7752315ca244b63fc6d333775cff.jpg",
       description: "Transparent living spaces connected to nature"
     },
     {
       title: "Urban Plaza",
       category: "Public",
-      image: "https://images.unsplash.com/photo-1527576539890-dfa815648363?w=600&h=400&fit=crop",
+      image: "https://i.pinimg.com/1200x/81/a3/60/81a3607542d64d782bbfb7f23ce09780.jpg",
       description: "Community gathering space in the heart of the city"
     },
     {
       title: "Wave Building",
       category: "Commercial",
-      image: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=600&h=400&fit=crop",
+      image: "https://i.pinimg.com/1200x/d6/90/bf/d690bfe96e96290158961c348331eeab.jpg",
       description: "Dynamic facade inspired by ocean waves"
     }
   ];
