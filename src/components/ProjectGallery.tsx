@@ -6,13 +6,13 @@ const ProjectGallery = () => {
     {
       title: "Sky Tower Residences",
       category: "Residential",
-      image: "https://buildingpractice.biz/wp-content/uploads/2024/01/2-6.jpg",
+      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
       description: "Luxury high-rise living with panoramic city views"
     },
     {
       title: "Innovation Hub",
       category: "Commercial",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3XBu6MJFtMiKEFeRId8TEaz0NJ4voWxmAA&s",
+      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
       description: "Cutting-edge workspace for tech companies"
     },
     {
@@ -60,6 +60,8 @@ const ProjectGallery = () => {
                 <img 
                   src={project.image} 
                   alt={project.title}
+                  loading="lazy"
+                  onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = "/placeholder.svg"; }}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>

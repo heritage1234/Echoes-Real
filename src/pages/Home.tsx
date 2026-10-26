@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import duplexImg from "@/assets/duplex.jpg";
 
 const Home = () => {
   const stats = [
@@ -15,13 +16,13 @@ const Home = () => {
     {
       title: "Modern Residential Complex",
       category: "Residential",
-      image: "https://buildingpractice.biz/wp-content/uploads/2024/01/2-29.jpg",
+      image: duplexImg,
       description: "Contemporary living spaces that blend comfort with style"
     },
     {
       title: "Corporate Headquarters",
       category: "Commercial", 
-      image: "https://buildingpractice.biz/wp-content/uploads/2024/01/1-23.jpg",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
       description: "Innovative workspace design for modern businesses"
     },
     {
@@ -100,6 +101,8 @@ const Home = () => {
                   <img 
                     src={project.image} 
                     alt={project.title}
+                    loading="lazy"
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = "/placeholder.svg"; }}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
